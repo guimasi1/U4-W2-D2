@@ -16,7 +16,7 @@ public class ContactList {
         // removeContact(contactList, scanner);
         // searchByNumber(contactList, scanner);
         searchByName(contactList, scanner);
-        printContacts(contactList,scanner);
+        printContacts(contactList);
         scanner.close();
 
     }
@@ -68,7 +68,7 @@ public class ContactList {
         } else System.out.println("Questo nome non è presente nella tua rubrica.");
     }
 
-    public static void printContacts(Map<String, Long> contactList, Scanner scanner) {
+    public static void printContacts(Map<String, Long> contactList) {
         Set<String> numberList = contactList.keySet();
         System.out.println("Ecco la tua rubrica:");
         for (String key: numberList) {
